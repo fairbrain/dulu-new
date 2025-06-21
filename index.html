@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DULU</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- remix icon cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css">
+  </head>
+
+  <body class="overflow-x-hidden">
+    <header class="sticky top-0 z-50 header-main-section">
+      <nav class="pb-3 pt-7 pr-12">
+        <div class="">
+
+          <!-- Logo -->
+          <img
+            src="./image/logo.png"
+            alt="Logo"
+            class="absolute top-6 md:left-16 left-5 md:w-60 w-30"
+            id="logo"
+          />
+
+          <!-- Upper Header Icons -->
+          <div class="flex items-center justify-end">
+            <ul class="flex items-center gap-6">
+              <li>
+                <a href="#" class="text-[20px]"
+                  ><i class="ri-search-line"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="text-[20px]"
+                  ><i class="ri-shopping-cart-2-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="text-[20px]"><i class="ri-user-fill"></i></a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  id="navbar-toggler"
+                  class="hover:text-gray-600"
+                >
+                  <i class="ri-menu-fold-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="mt-4 lg:flex justify-end" id="navbarNav">
+          <ul class="flex flex-col lg:flex-row gap-6 items-center" id="navbar">
+            <li>
+              <a href="#" class="text-gray-700 text-[15px] hover:text-red-600"
+                >HOME</a
+              >
+            </li>
+            <li><a href="#" class="text-gray-700 text-[15px]">ABOUT US</a></li>
+            <li><a href="#" class="text-gray-700 text-[15px]">PRODUCTS</a></li>
+            <li><a href="#" class="text-gray-700 text-[15px]">GALLERY</a></li>
+            <li><a href="#" class="text-gray-700 text-[15px]">RECIPE</a></li>
+            <li>
+              <a href="#" class="text-gray-700 text-[15px]">HAPPY CLIENTS</a>
+            </li>
+            <li><a href="#" class="text-gray-700 text-[15px]">KNOWLEDGE</a></li>
+            <li><a href="#" class="text-gray-700 text-[15px]">CONTACT</a></li>
+            <li><a href="#" class="text-gray-700 text-[15px]">JOIN US</a></li>
+            <li
+              class="block lg:hidden px-3 py-2 text-red-600 cursor-pointer bg-white"
+              id="close-btn"
+            >
+              <i class="ri-close-line"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero-container sm:h-[110vh] h-[300px] relative" id="hero">
+      <div class="flex h-full w-full">
+        <div class="slide">
+          <img
+            src="./image/banner 1.png"
+            alt=""
+            class="h-full object-cover border-r-4 border-white w-full"
+          />
+        </div>
+        <div class="slide active">
+          <img
+            src="./image/banner 2.png"
+            alt=""
+            class="h-full object-cover border-l-4 border-r-4 border-white w-full"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./image/banner 3..png"
+            alt=""
+            class="h-full object-cover border-l-4 border-r-4 border-white w-full"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./image/banner 4.png"
+            alt=""
+            class="h-full object-cover border-l-4 border-white w-full"
+          />
+        </div>
+      </div>
+
+      <div
+        class="prev-slide absolute top-1/2 left-5 z-10 text-2xl border text-white animate-ping hover:animate-none border-white cursor-pointer bg-amber-400 px-2 py-1 rounded-full"
+      >
+        <i class="ri-arrow-left-line"></i>
+      </div>
+      <div
+        class="next-slide absolute top-1/2 z-10 text-2xl border text-white animate-ping hover:animate-none border-white cursor-pointer bg-amber-400 px-2 py-1 rounded-full right-5"
+      >
+        <i class="ri-arrow-right-line"></i>
+      </div>
+    </section>
+
+    <section class="w-full h-[100px] bg-[#fde908]"></section>
+
+    <section
+    id="about-us"
+      class="about-us-main flex md:flex-row flex-col container items-center px-5 mx-auto"
+    >
+      <div class="md:w-[35%] left-dection relative h-full pt-36 w-full perspective-distant">
+        <img
+          src="./image/logo.png"
+          alt=""
+          id="about-logo"
+          class="about-logo absolute md:top-[20%] top-5 left-[10%] w-[80%] object-contain hover:rotate-y-[45deg] transition-all transform-3d"
+        />
+        <img src="./image/oil flow.png" alt="" class="" />
+        <img
+          src="./image/flower.png"
+          alt=""
+          class="rotate-[180deg] md:absolute md:h-36 h-10 scale-y-[-1] -bottom-25 animate-bounce"
+        />
+      </div>
+
+      <div
+        class="md:w-[65%] pt-8 py-32 right-section md:h-full w-full ps-5 relative"
+      >
+        <h1
+          class="font-semibold md:text-4xl text-2xl shadow-[5px_5px_5px_#edf0f2] ps-4 pe-[100px] rounded-2xl inline-block bg-[#edf0f2]"
+        >
+          ABOUT US
+        </h1>
+        <div class="pt-12">
+          <h2 class="font-semibold text-[20px]">Vision</h2>
+          <p class="text-gray-500 md:text-[18px] text-[14px]">
+            To establish Shukrana Mustard Oil as a leading global brand,
+            renowned for its unwavering commitment to purity, quality and
+            innovation. We strive to enhance the well-being of our valued
+            customers and stakeholders by delivering premium, sustainable and
+            cost-effective products that exceed expectations.
+          </p>
+        </div>
+
+        <div class="pt-10">
+          <h2 class="font-semibold text-[20px] text-end">Mission</h2>
+          <p class="text-gray-500 md:text-[18px] text-[14px] text-end">
+            At Shukrana Mustard Oil, our mission is to consistently exceed
+            customer expectations by providing the purest and most flavorful
+            mustard oil. We are dedicated to creating new opportunities for our
+            consumers and partners by leveraging our passion, expertise and
+            commitment to quality, ensuring a healthier and more enriching
+            experience in every drop.
+          </p>
+        </div>
+
+        <div class="pt-5">
+          <a
+            href="#"
+            class="px-4 py-1 text-[#497a20] rounded-[40px] bg-[#ffeb5c] font-semibold no-underline"
+            >Know More</a
+          >
+        </div>
+
+        <img
+          src="./image/flower.png"
+          alt=""
+          class="rotate-[180deg] absolute md:h-36 h-10 scale-y-[-1] right-[5%] animate-bounce"
+        />
+      </div>
+    </section>
+
+    <section
+      class="container grid lg:grid-cols-2 grid-cols-1 items-center mx-auto px-5"
+    >
+      <div class="left-part">
+        <h3 class=" text-[#ffc20e] md:text-5xl text-3xl font-bc">
+          Choose Best for Your Family
+        </h3>
+        <p class="md:text-[20px] text-[14px] pt-3">
+          Good & nutritious ingredients are the secret of good health & perfect
+          taste. DULU Kachchi Ghani Mustard Oil brings to you three variants,
+          perfect for your family's happiness.
+        </p>
+      </div>
+      <div class="p-5">
+        <img src="./image/closeup-mustard-flowers.jpg" alt="" class="w-full" />
+      </div>
+    </section>
+
+    <section class="our_products">
+      <div class="relative">
+        <h5 class=" text-[#ffc20e] md:text-6xl text-3xl font-bc text-center">
+          Our Products
+        </h5>
+        <p class="text-center pt-2 md:text-[20px] text-[16px]">
+          Made With Purpose.Loved By All
+        </p>
+        <div class="flex justify-around md:absolute w-full top-0">
+          <img src="./image/flower.png" alt="" class="md:h-36 h-10 animate-bounce" />
+          <img src="./image/flower.png" alt="" class="md:h-36 h-10 animate-bounce" />
+        </div>
+      </div>
+
+      <div class="w-full mt-10">
+        <div class="flex justify-center items-end  mx-auto md:px-18 px-5 relative all-products">
+          <img src="./image/5ltr jar mockup (1).png" alt="" class="relative w-[15%] left-[10%]" />
+          <img
+            src="./image/Mockup - 250 OIL POUCH (1).png"
+            alt=""
+            class="w-[20%] relative z-10 left-[5%]"
+          />
+          <img
+            src="./image/bottle Final ChatGPT re (1).png"
+            alt=""
+            class="w-[12%] relative z-30 left-[2%]" 
+          />
+          <img
+            src="./image/Mockup - front (1).png"
+            alt=""
+            class="w-[15%] relative right-[2%] z-20"
+          />
+          <img
+            src="./image/tin 2 (1).png"
+            alt=""
+            class="w-[25%] z-10 relative right-[5%]"
+          />
+          
+        </div>
+      </div>
+      <div class="flex justify-center items-center md:mt-10 mt-5" id="amra">
+        <img src="./image/amara.png" alt=""  class="md:w-[80%] w-full" />
+      </div>
+    </section>
+
+    <section class="mt-10">
+      <video src="./video/VIDEO FINAL.mp4" autoplay loop muted></video>
+    </section>
+
+    <footer class="py-3 pt-5 lg:pt-0 bg-[#fdd601]">
+      <div class="px-4 lg:px-20">
+        <div class="flex flex-col lg:flex-row">
+          <!-- Left Section -->
+          <div class="w-full lg:w-1/3 pt-5 lg:pt-10 flex flex-col items-center">
+            <img src="./image/logo.png" alt="img" class="w-1/2" />
+            <p class="text-center text-sm pt-4 lg:pt-6 text-gray-700">
+              Our Happiness Client's now all over the india
+            </p>
+            <div class="text-center">
+              <p class="m-0 p-0">VISIT US AT :</p>
+              <ul class="flex gap-4 justify-center items-center pt-2">
+                <li>
+                  <a href="#" class="text-red-600 text-2xl lg:text-xl"
+                    ><i class="ri-facebook-box-fill"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="text-red-600 text-2xl lg:text-xl"
+                    ><i class="ri-instagram-fill"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="text-red-600 text-2xl lg:text-xl"
+                    ><i class="ri-youtube-fill"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="text-red-600 text-2xl lg:text-xl"
+                    ><i class="ri-whatsapp-fill"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Middle Section -->
+          <div
+            class="w-full lg:w-1/3 pt-5 lg:pt-10 flex flex-col items-start lg:items-center ps-4 lg:ps-0"
+          >
+            <ul class="list-none">
+              <p class="md:text-lg text-md font-bold text-gray-700">Quick Links</p>
+              <li>
+                <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Section -->
+          <div
+            class="w-full lg:w-1/3 pt-3 lg:pt-10 flex flex-col items-start lg:items-center ps-4 lg:ps-0"
+          >
+            <ul class="list-none">
+              <p class="md:text-lg text-md  font-bold text-gray-700">Get In Touch</p>
+              <li>
+                <p class="m-0 font-bold md:text-lg text-sm text-gray-800">
+                  Customer Care :
+                </p>
+              </li>
+              <li>
+                <a href="#" class="text-dark md:text-lg text-sm no-underline">
+                  <i class="ri-phone-fill pe-2 text-gray-700"></i>7063379844
+                </a>
+              </li>
+              <li>
+                <p class="m-0 font-bold md:text-lg text-sm text-gray-800">Email :</p>
+              </li>
+              <li>
+                <a href="#" class="text-dark md:text-lg text-sm no-underline">
+                  <i class="ri-mail-fill pe-2 text-gray-700"></i>care@dulu.co.in
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="flex justify-center pt-4">
+          <div class="underline w-[80%] h-1 bg-gray-400 rounded-[50%]"></div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div
+          class="flex flex-col lg:flex-row justify-between items-start lg:items-center pt-4 px-3"
+        >
+          <div class="w-full lg:w-1/2">
+            <p>
+              Web Development & Designed by
+              <span class="font-bold text-[#ff6700]">fairbrain</span> (all
+              rights reserved)
+            </p>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <ul
+              class="flex gap-3 justify-start lg:justify-end list-none pt-2 lg:pt-0"
+            >
+              <li>
+                <a href="#" class="text-dark no-underline text-gray-700"
+                  >Terms</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark no-underline text-gray-700"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark no-underline text-gray-700"
+                  >License</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/custom_gsap.js"></script>
+
+  </body>
+</html>
