@@ -20,6 +20,10 @@ body {
   @apply hover:font-bold hover:text-red-600 hover:border-b hover:border-red-600
 }
 
+#navbarNav ul li a.active {
+  @apply font-bold text-red-600 border-b border-red-600
+}
+
 .hero-container .slide {
   @apply relative;
 }
@@ -70,4 +74,21 @@ body {
     left: -100%;
     transition: left 0.3s ease-in-out;
   }
+}
+
+.about-page{
+  position: relative;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("../image/about/about.avif") no-repeat center center/cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+.about-page::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/image/about/elements\ LEAF.png") no-repeat center center/cover;
 }

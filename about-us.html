@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DULU</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css">
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="sticky top-0 z-50 header-main-section">
+        <nav class="pb-3 pt-7 pr-12">
+            <div class="">
+
+                <!-- Logo -->
+                <img src="./image/logo.png" alt="Logo" class="absolute top-6 md:left-16 left-5 md:w-60 w-30"
+                    id="logo" />
+
+                <!-- Upper Header Icons -->
+                <div class="flex items-center justify-end">
+                    <ul class="flex items-center gap-6">
+                        <li>
+                            <a href="#" class="text-[20px]"><i class="ri-search-line"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[20px]"><i class="ri-shopping-cart-2-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[20px]"><i class="ri-user-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" id="navbar-toggler" class="hover:text-gray-600">
+                                <i class="ri-menu-fold-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="mt-4 lg:flex justify-end" id="navbarNav">
+                <ul class="flex flex-col lg:flex-row gap-6 items-center" id="navbar">
+                    <li>
+                        <a href="index.html" class="text-gray-700 text-[15px] hover:text-red-600 ">HOME</a>
+                    </li>
+                    <li><a href="about-us.html" class="text-gray-700 text-[15px] active">ABOUT US</a></li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">PRODUCTS</a></li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">GALLERY</a></li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">RECIPE</a></li>
+                    <li>
+                        <a href="#" class="text-gray-700 text-[15px]">HAPPY CLIENTS</a>
+                    </li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">KNOWLEDGE</a></li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">CONTACT</a></li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">JOIN US</a></li>
+                    <li class="block lg:hidden px-3 py-2 text-red-600 cursor-pointer bg-white" id="close-btn">
+                        <i class="ri-close-line"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-page bg-cyan-50 py-10">
+            <div class="container mx-auto grid grid-cols-3">
+                <div
+                    class="about-content bg-[#ffb17dad] shadow-2xl backdrop-blur-[2px]  col-span-2 text-center p-5 rounded-2xl">
+                    <h2 class="inline-block text-2xl font-bold bg-white px-5 py-1 rounded-2xl mb-2 ">About Us</h2>
+                    <p class="text-center">We are pleased to introduce <strong>SHUKRANA MUSTARD OIL</strong>, an
+                        emerging player in the food industry, committed
+                        to
+                        serving customers both locally and across India. Our brand, DULU, reflects our deep-rooted
+                        connection to
+                        regional heritage and culture.</p>
+                    <p class="bg-[#ffffd9] rounded-2xl p-5 my-5">tate-of-the-Art Facility Our manufacturing unit,
+                        located in Monteswar, Purba Burdwan, West
+                        Bengal, follows strict quality control measures and advanced storage techniques to ensure
+                        product integrity and freshness.</p>
+                    <p class="bg-[#defff9] rounded-2xl p-5 mb-5">
+                        Our Commitment Sustainable and responsible business practices Superior product quality
+                        through a blend of tradition and modern technology Supporting rural communities and
+                        prioritizing local workforce development
+                    </p>
+                    <p class="mb-5">Our manufacturing unit, located in Monteswar, Purba Burdwan, West Bengal, follows
+                        strict quality
+                        control measures and advanced storage techniques to ensure product integrity and freshness.</p>
+                </div>
+                <div class="about-oil flex justify-center items-end">
+                    <div class="relative">
+                        <div class="flex items-end">
+                            <img src="/image/about/TIN.png" alt="">
+                            <img src="/image/about/5LTR JAR.png" alt="/">
+                        </div>
+                        <div class="flex items-end w-[35%] absolute bottom-0 left-0">
+                            <img src="/image/about/BOTTLE.png" alt="" class="relative left-5">
+                        <img src="/image/about/POUCH.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-3 pt-5 lg:pt-0 bg-[#fdd601]">
+        <div class="px-4 lg:px-20">
+            <div class="flex flex-col lg:flex-row">
+                <!-- Left Section -->
+                <div class="w-full lg:w-1/3 pt-5 lg:pt-10 flex flex-col items-center">
+                    <img src="./image/logo.png" alt="img" class="w-1/2" />
+                    <p class="text-center text-sm pt-4 lg:pt-6 text-gray-700">
+                        Our Happiness Client's now all over the india
+                    </p>
+                    <div class="text-center">
+                        <p class="m-0 p-0">VISIT US AT :</p>
+                        <ul class="flex gap-4 justify-center items-center pt-2">
+                            <li>
+                                <a href="#" class="text-red-600 text-2xl lg:text-xl"><i
+                                        class="ri-facebook-box-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-red-600 text-2xl lg:text-xl"><i
+                                        class="ri-instagram-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-red-600 text-2xl lg:text-xl"><i class="ri-youtube-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-red-600 text-2xl lg:text-xl"><i
+                                        class="ri-whatsapp-fill"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Middle Section -->
+                <div class="w-full lg:w-1/3 pt-5 lg:pt-10 flex flex-col items-start lg:items-center ps-4 lg:ps-0">
+                    <ul class="list-none">
+                        <p class="md:text-lg text-md font-bold text-gray-700">Quick Links</p>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">Privacy
+                                Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">Terms &
+                                Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Section -->
+                <div class="w-full lg:w-1/3 pt-3 lg:pt-10 flex flex-col items-start lg:items-center ps-4 lg:ps-0">
+                    <ul class="list-none">
+                        <p class="md:text-lg text-md  font-bold text-gray-700">Get In Touch</p>
+                        <li>
+                            <p class="m-0 font-bold md:text-lg text-sm text-gray-800">
+                                Customer Care :
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline">
+                                <i class="ri-phone-fill pe-2 text-gray-700"></i>7063379844
+                            </a>
+                        </li>
+                        <li>
+                            <p class="m-0 font-bold md:text-lg text-sm text-gray-800">Email :</p>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline">
+                                <i class="ri-mail-fill pe-2 text-gray-700"></i>care@dulu.co.in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="flex justify-center pt-4">
+                <div class="underline w-[80%] h-1 bg-gray-400 rounded-[50%]"></div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center pt-4 px-3">
+                <div class="w-full lg:w-1/2">
+                    <p>
+                        Web Development & Designed by
+                        <span class="font-bold text-[#ff6700]">fairbrain</span> (all
+                        rights reserved)
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <ul class="flex gap-3 justify-start lg:justify-end list-none pt-2 lg:pt-0">
+                        <li>
+                            <a href="#" class="text-dark no-underline text-gray-700">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark no-underline text-gray-700">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark no-underline text-gray-700">License</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/custom_gsap.js"></script>
+
+</body>
+
+</html>
