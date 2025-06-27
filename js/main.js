@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let autoplayInterval;
 
     function showSlide(index) {
-      slides.forEach(slide => slide.classList.remove("active"));
-      slides[index].classList.add("active");
+      slides?.forEach(slide => slide.classList.remove("active"));
+      slides[index]?.classList.add("active");
     }
 
     function nextSlide() {
@@ -29,18 +29,18 @@ document.addEventListener("DOMContentLoaded", () => {
       clearInterval(autoplayInterval);
     }
 
-    nextBtn.addEventListener("click", () => {
+    nextBtn?.addEventListener("click", () => {
       nextSlide();
     });
 
-    prevBtn.addEventListener("click", () => {
+    prevBtn?.addEventListener("click", () => {
       prevSlide();
     });
 
     // Pause autoplay on hover over nav buttons
-    [nextBtn, prevBtn].forEach(button => {
-      button.addEventListener("mouseenter", stopAutoplay);
-      button.addEventListener("mouseleave", startAutoplay);
+    [nextBtn, prevBtn]?.forEach(button => {
+      button?.addEventListener("mouseenter", stopAutoplay);
+      button?.addEventListener("mouseleave", startAutoplay);
     });
 
     // Start autoplay on page load

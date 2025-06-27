@@ -1,6 +1,7 @@
 /*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -35,9 +36,11 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
+    --font-weight-extralight: 200;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
+    --radius-4xl: 2rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     --animate-bounce: bounce 1s infinite;
@@ -288,6 +291,9 @@
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
   }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -296,6 +302,9 @@
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-\[50px\] {
+    margin-top: 50px;
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -315,6 +324,12 @@
   .inline-block {
     display: inline-block;
   }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
@@ -332,6 +347,9 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
   .w-30 {
     width: calc(var(--spacing) * 30);
@@ -372,6 +390,9 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .list-disc {
+    list-style-type: disc;
   }
   .list-none {
     list-style-type: none;
@@ -424,6 +445,9 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
   .rounded-\[40px\] {
     border-radius: 40px;
   }
@@ -447,6 +471,9 @@
   }
   .border-white {
     border-color: var(--color-white);
+  }
+  .bg-\[\#FC9206\] {
+    background-color: #FC9206;
   }
   .bg-\[\#defff9\] {
     background-color: #defff9;
@@ -505,6 +532,9 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -516,6 +546,9 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
   }
   .py-32 {
     padding-block: calc(var(--spacing) * 32);
@@ -571,6 +604,9 @@
   .text-end {
     text-align: end;
   }
+  .text-left {
+    text-align: left;
+  }
   .font-bc {
     font-family: var(--font-bc);
   }
@@ -582,9 +618,21 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .text-\[14px\] {
     font-size: 14px;
@@ -602,12 +650,19 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-extralight {
+    --tw-font-weight: var(--font-weight-extralight);
+    font-weight: var(--font-weight-extralight);
+  }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
   .text-\[\#497a20\] {
     color: #497a20;
+  }
+  .text-\[\#fc9206\] {
+    color: #fc9206;
   }
   .text-\[\#ff6700\] {
     color: #ff6700;
@@ -635,6 +690,10 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .shadow {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
@@ -742,6 +801,11 @@
   .md\:w-\[80\%\] {
     @media (width >= 48rem) {
       width: 80%;
+    }
+  }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
   .md\:flex-row {
@@ -859,9 +923,22 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .xl\:w-1\/2 {
+    @media (width >= 80rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
+  .xl\:flex-row {
+    @media (width >= 80rem) {
+      flex-direction: row;
+    }
+  }
 }
 body {
   font-family: "Poppins", sans-serif;
+}
+.font-love {
+  font-family: "Love Light", cursive !important;
 }
 .header-main-section {
   background-color: #ffeb5c;
@@ -948,7 +1025,81 @@ body {
   position: absolute;
   bottom: 0;
 }
-@media (max-width: 600px) {
+.about-page {
+  position: relative;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.32) 100%), url("../image/about/farm.jpeg") center left/cover;
+  background-attachment: fixed;
+  background-position: 50%;
+}
+.about-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/image/about/elements\ LEAF.png") no-repeat center center/cover;
+}
+.product-slider-section {
+  background-image: url("../image/products/BG\ ORG2.png"), url('../image/products/elements\ LEAF.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, top left;
+  background-size: cover, cover;
+}
+.mySwiper1 {
+  background-image: url(../image/products/BG\ ORG.png);
+  background-position: right top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mySwiper1 ul li {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+}
+.mySwiper2 img {
+  max-width: 100%;
+  height: 500px;
+  object-fit: contain;
+  object-position: left;
+}
+.mySwiper2 .swiper-slide img {
+  scale: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.mySwiper2 .swiper-slide-prev img {
+  scale: 1.2;
+  transform: translateX(50px);
+  position: relative;
+  z-index: 3;
+  opacity: 1;
+}
+.mySwiper2 .swiper-slide-active img {
+  scale: 0.8;
+  transform: translateX(80px);
+  position: relative;
+  z-index: 2;
+  filter: blur(2px);
+  opacity: 1;
+}
+.mySwiper2 .swiper-slide-next img {
+  scale: 0.6;
+  transform: translateX(50px);
+  position: relative;
+  z-index: 1;
+  filter: blur(4px);
+  opacity: 1;
+}
+.mySwiper1 .swiper-slide {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.mySwiper1 .swiper-slide h2 {
+  font-size: clamp(50px, 5vw, 25px);
+}
+@media (max-width: 1200px) {
   .all-products::before {
     height: 100px;
   }
@@ -961,21 +1112,27 @@ body {
     left: -100%;
     transition: left 0.3s ease-in-out;
   }
-}
-.about-page {
-  position: relative;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("../image/about/about.avif") no-repeat center center/cover;
-  background-attachment: fixed;
-  background-position: top;
-}
-.about-page::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("/image/about/elements\ LEAF.png") no-repeat center center/cover;
+  .mySwiper1 {
+    background-size: cover;
+    background-position: left;
+  }
+  .mySwiper2 .swiper-slide-active img {
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  .mySwiper2 .swiper-slide-next img {
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  .mySwiper2 .swiper-slide-prev img {
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  .mySwiper2 .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @property --tw-scale-x {
   syntax: "*";

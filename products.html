@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DULU</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="sticky top-0 z-50 header-main-section">
+        <nav class="pb-3 pt-7 pr-12">
+            <div class="">
+
+                <!-- Logo -->
+                <img src="./image/logo.png" alt="Logo" class="absolute top-6 md:left-16 left-5 md:w-60 w-30"
+                    id="logo" />
+
+                <!-- Upper Header Icons -->
+                <div class="flex items-center justify-end">
+                    <ul class="flex items-center gap-6">
+                        <li>
+                            <a href="#" class="text-[20px]"><i class="ri-search-line"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[20px]"><i class="ri-shopping-cart-2-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[20px]"><i class="ri-user-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" id="navbar-toggler" class="hover:text-gray-600">
+                                <i class="ri-menu-fold-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="mt-4 lg:flex justify-end" id="navbarNav">
+                <ul class="flex flex-col lg:flex-row gap-6 items-center" id="navbar">
+                    <li>
+                        <a href="index.html" class="text-gray-700 text-[15px] hover:text-red-600 ">HOME</a>
+                    </li>
+                    <li><a href="about-us.html" class="text-gray-700 text-[15px] ">ABOUT US</a></li>
+                    <li><a href="products.html" class="text-gray-700 text-[15px] active">PRODUCTS</a></li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">GALLERY</a></li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">RECIPE</a></li>
+                    <li>
+                        <a href="#" class="text-gray-700 text-[15px]">HAPPY CLIENTS</a>
+                    </li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">KNOWLEDGE</a></li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">CONTACT</a></li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">JOIN US</a></li>
+                    <li class="block lg:hidden px-3 py-2 text-red-600 cursor-pointer bg-white" id="close-btn">
+                        <i class="ri-close-line"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="products">
+
+            <div class="product-slider-section text-center">
+                <h1
+                    class="text-center text-[#fc9206] px-5 py-2 text-2xl bg-white mt-5 font-bold shadow rounded-2xl inline-block">
+                    RANGE OF PRODUCTS WITH PACK SIZE</h1>
+                <div class="w-full">
+
+
+                    <!-- Swipers Wrapper -->
+                    <div class="swiper-wrapper-container flex justify-center mt-[50px] xl:flex-row flex-col">
+                        <!-- Swiper 1 -->
+                        <div class="swiper mySwiper1 xl:w-1/2 w-full py-10">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide text-left">
+                                    <div class="py-20 px-10">
+                                        <h2 class="text-4xl font-bold text-white">DULU MUSTARD OIL</h2>
+                                        <p class="text-xl text-white">200ml, 500ml & 1000ml Pouch</p>
+                                        <ul class="font-extralight text-white">
+                                            <li>
+                                                <img src="./image/products/pouch_ico/1.png" alt=""
+                                                    class="w-10 aspect-square object-contain">
+                                                <span>Lightweight & easy-to-store pouch packaging.</span>
+                                            </li>
+                                            <li>
+                                                <img src="./image/products/pouch_ico/2.png" alt=""
+                                                    class="w-10 aspect-square object-contain">
+                                                <span>Cost-effective without compromising on purity and quality.</span>
+                                            </li>
+                                            <li>
+                                                <img src="./image/products/pouch_ico/3.png" alt=""
+                                                    class="w-10 aspect-square object-contain">
+                                                <span>Airtight, tamper-proof seal to preserve freshness.</span>
+                                            </li>
+                                            <li>
+                                                <img src="./image/products/pouch_ico/4.png" alt=""
+                                                    class="w-10 aspect-square object-contain">
+                                                <span>Perfect for bulk use and refills.</span>
+                                            </li>
+
+                                        </ul>
+                                        <p class="text-3xl font-love font-extralight text-white mt-3">Smart Packaging,
+                                            Same Great Quality</p>
+                                        <p></p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide text-left">
+                                    <div class="py-20 px-10">
+                                        <h2 class="text-4xl font-bold text-white">DULU MUSTARD OIL</h2>
+                                        <p class="text-xl text-white">200ml, 500ml & 1000ml Bottle</p>
+                                        <ul class="font-extralight text-white">
+                                            <li>
+                                                <img src="./image/products/bottle_icon/1 (2).png" alt=""
+                                                    class="w-10 aspect-square object-contain">
+                                                <span>Convenient & Handy: Ideal for small households and travel.</span>
+                                            </li>
+                                            <li>
+                                                <img src="./image/products/bottle_icon/2 (2).png" alt=""
+                                                    class="w-10 aspect-square object-contain">
+                                                <span>Strong Pungency & Rich Aroma: Adds authentic flavour to
+                                                    dishes.</span>
+                                            </li>
+                                            <li>
+                                                <img src="./image/products/bottle_icon/3 (2).png" alt=""
+                                                    class="w-10 aspect-square object-contain">
+                                                <span>Sealed for Freshness: Leak-proof PET bottle with tamper-proof
+                                                    cap.</span>
+                                            </li>
+                                            <li>
+                                                <img src="./image/products/bottle_icon/4 (2).png" alt=""
+                                                    class=" w-10 aspect-square object-contain">
+                                                <span>Retains natural essential oils, ensuring strong pungency and
+                                                    authentic taste.
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <img src="./image/products/bottle_icon/5 (3).png" alt=""
+                                                    class="w-10 aspect-square object-contain">
+                                                <span>High-quality packaging maintains freshness & purity.
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <img src="./image/products/bottle_icon/6.png" alt=""
+                                                    class="w-10 aspect-square object-contain">
+                                                <span>Ideal for cooking, deep frying, and pickling.
+                                                </span>
+                                            </li>
+
+                                        </ul>
+                                        <p class="text-3xl font-love font-extralight text-white mt-3">Smart Packaging,
+                                            Same Great Quality</p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide text-left">
+                                    <div class="py-20 px-10">
+                                        <h2 class="text-4xl font-bold text-white">DULU MUSTARD OIL</h2>
+                                        <p class="text-xl text-white">5ltr Jar</p>
+                                        <ul class="font-extralight text-white list-disc">
+                                            <li>
+                                                <i class="ri-git-commit-line"></i>
+                                                <span>5Ltr Jar: Convenient for households and bulk buyers</span>
+                                            </li>
+                                            <li>
+                                                <i class="ri-git-commit-line"></i>
+                                                <span>Superior Storage: Prevents rancidity and retains natural
+                                                    flavours.</span>
+                                            </li>
+                                            <li>
+                                                <i class="ri-git-commit-line"></i>
+                                                <span>Durable & Leak-Proof Packaging:
+                                                    Designed for long-term storage and easy handling.</span>
+                                            </li>
+
+                                        </ul>
+                                        <p class="text-3xl font-love font-extralight text-white mt-3">Smart Packaging,
+                                            Same Great Quality</p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide text-left">
+                                    <div class="py-20 px-10">
+                                        <h2 class="text-4xl font-bold text-white">DULU MUSTARD OIL</h2>
+                                        <p class="text-xl text-white">15Kg Tin</p>
+                                        <ul class="font-extralight text-white">
+                                            <li>
+                                                <img src="./image/products/tin_icon/1.png" alt=""
+                                                    class="w-10 aspect-square object-contain">
+                                                <span>Lightweight & easy-to-store pouch packaging.</span>
+                                            </li>
+                                            <li>
+                                                <img src="./image/products/tin_icon/2.png" alt=""
+                                                    class="w-10 aspect-square object-contain">
+                                                <span>Cost-effective without compromising on purity and quality.</span>
+                                            </li>
+                                            <li>
+                                                <img src="./image/products/tin_icon/3.png" alt=""
+                                                    class="w-10 aspect-square object-contain">
+                                                <span>Airtight, tamper-proof seal to preserve freshness.</span>
+                                            </li>
+
+
+                                        </ul>
+                                        <p class="text-3xl font-love font-extralight text-white mt-3">Smart Packaging,
+                                            Same Great Quality</p>
+                                        <p></p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Swiper 2 -->
+                        <div class="xl:w-1/2 w-full">
+                            <div class="swiper mySwiper2 p-5">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./image/products/5LTR JAR.png" alt="image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./image/products/POUCH.png" alt="image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./image/products/TIN.png" alt="image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./image/products/BOTTLE.png" alt="image">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Navigation -->
+                            <div
+                                class="nav-buttons text-white bg-[#FC9206] px-5 py-2 inline-flex justify-center rounded-4xl gap-6 my-5">
+                                <button id="prevBtn" class="font-bold text-3xl"><i
+                                        class="ri-arrow-left-line"></i></button>
+                                <p class="font-love text-5xl text-white">The Best Choice</p>
+                                <button id="nextBtn" class="font-bold text-3xl"><i
+                                        class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="py-3 pt-5 lg:pt-0 bg-[#fdd601]">
+        <div class="px-4 lg:px-20">
+            <div class="flex flex-col lg:flex-row">
+                <!-- Left Section -->
+                <div class="w-full lg:w-1/3 pt-5 lg:pt-10 flex flex-col items-center">
+                    <img src="./image/logo.png" alt="img" class="w-1/2" />
+                    <p class="text-center text-sm pt-4 lg:pt-6 text-gray-700">
+                        Our Happiness Client's now all over the india
+                    </p>
+                    <div class="text-center">
+                        <p class="m-0 p-0">VISIT US AT :</p>
+                        <ul class="flex gap-4 justify-center items-center pt-2">
+                            <li>
+                                <a href="#" class="text-red-600 text-2xl lg:text-xl"><i
+                                        class="ri-facebook-box-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-red-600 text-2xl lg:text-xl"><i
+                                        class="ri-instagram-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-red-600 text-2xl lg:text-xl"><i class="ri-youtube-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-red-600 text-2xl lg:text-xl"><i
+                                        class="ri-whatsapp-fill"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Middle Section -->
+                <div class="w-full lg:w-1/3 pt-5 lg:pt-10 flex flex-col items-start lg:items-center ps-4 lg:ps-0">
+                    <ul class="list-none">
+                        <p class="md:text-lg text-md font-bold text-gray-700">Quick Links</p>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">Privacy
+                                Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">Terms &
+                                Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Section -->
+                <div class="w-full lg:w-1/3 pt-3 lg:pt-10 flex flex-col items-start lg:items-center ps-4 lg:ps-0">
+                    <ul class="list-none">
+                        <p class="md:text-lg text-md  font-bold text-gray-700">Get In Touch</p>
+                        <li>
+                            <p class="m-0 font-bold md:text-lg text-sm text-gray-800">
+                                Customer Care :
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline">
+                                <i class="ri-phone-fill pe-2 text-gray-700"></i>7063379844
+                            </a>
+                        </li>
+                        <li>
+                            <p class="m-0 font-bold md:text-lg text-sm text-gray-800">Email :</p>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline">
+                                <i class="ri-mail-fill pe-2 text-gray-700"></i>care@dulu.co.in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="flex justify-center pt-4">
+                <div class="underline w-[80%] h-1 bg-gray-400 rounded-[50%]"></div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center pt-4 px-3">
+                <div class="w-full lg:w-1/2">
+                    <p>
+                        Web Development & Designed by
+                        <span class="font-bold text-[#ff6700]">fairbrain</span> (all
+                        rights reserved)
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <ul class="flex gap-3 justify-start lg:justify-end list-none pt-2 lg:pt-0">
+                        <li>
+                            <a href="#" class="text-dark no-underline text-gray-700">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark no-underline text-gray-700">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark no-underline text-gray-700">License</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/custom_gsap.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // Create two Swiper instances
+        const swiper1 = new Swiper(".mySwiper1", {
+            loop: true,
+            allowTouchMove: false,
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true,
+            },
+            autoplay: {
+                delay: 3000, // time between slides in ms
+                disableOnInteraction: false, // autoplay keeps going even when user interacts
+            },
+        });
+
+        const swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 10,
+            allowTouchMove: false,
+            autoplay: {
+                delay: 3000, // time between slides in ms
+                disableOnInteraction: false, // autoplay keeps going even when user interacts
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+
+        // Button controls for both swipers
+        document.getElementById("prevBtn").addEventListener("click", () => {
+            swiper1.slidePrev();
+            swiper2.slidePrev();
+        });
+
+        document.getElementById("nextBtn").addEventListener("click", () => {
+            swiper1.slideNext();
+            swiper2.slideNext();
+        });
+    </script>
+
+</body>
+
+</html>
