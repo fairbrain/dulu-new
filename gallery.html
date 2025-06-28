@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DULU</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="sticky top-0 z-50 header-main-section">
+        <nav class="pb-3 pt-7 pr-12">
+            <div class="">
+
+                <!-- Logo -->
+                <img src="./image/logo.png" alt="Logo" class="absolute top-6 md:left-16 left-5 md:w-60 w-30"
+                    id="logo" />
+
+                <!-- Upper Header Icons -->
+                <div class="flex items-center justify-end">
+                    <ul class="flex items-center gap-6">
+                        <li>
+                            <a href="#" class="text-[20px]"><i class="ri-search-line"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[20px]"><i class="ri-shopping-cart-2-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[20px]"><i class="ri-user-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" id="navbar-toggler" class="hover:text-gray-600">
+                                <i class="ri-menu-fold-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="mt-4 lg:flex justify-end" id="navbarNav">
+                <ul class="flex flex-col lg:flex-row gap-6 items-center" id="navbar">
+                    <li>
+                        <a href="index.html" class="text-gray-700 text-[15px] hover:text-red-600 ">HOME</a>
+                    </li>
+                    <li><a href="about-us.html" class="text-gray-700 text-[15px] active">ABOUT US</a></li>
+                    <li><a href="products.html" class="text-gray-700 text-[15px]">PRODUCTS</a></li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">GALLERY</a></li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">RECIPE</a></li>
+                    <li>
+                        <a href="#" class="text-gray-700 text-[15px]">HAPPY CLIENTS</a>
+                    </li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">KNOWLEDGE</a></li>
+                    <li><a href="contact.html" class="text-gray-700 text-[15px]">CONTACT</a></li>
+                    <li><a href="#" class="text-gray-700 text-[15px]">JOIN US</a></li>
+                    <li class="block lg:hidden px-3 py-2 text-red-600 cursor-pointer bg-white" id="close-btn">
+                        <i class="ri-close-line"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-section my-10">
+            <h1 class="gallery-heading">GALLERY</h1>
+            <div class="container mx-auto gallery-wrapper relative md:-top-20 -top-5">
+                <div class="gal-category-nav mx-2 ">
+                    <ul
+                        class="bg-[#fc9206] w-full flex gap-2 justify-between px-5 py-2 rounded-3xl md:text-lg text-[8px] font-bold">
+                        <li>FACTORY OUTSIDE</li>
+                        <li>FACTORY INSIDE</li>
+                        <li>FUNCTION</li>
+                    </ul>
+                </div>
+                <div class="grid gap-2 p-5 grid-cols-2 md:grid-cols-5 md:grid-rows-4">
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/1.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/1.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card md:col-span-2 md:row-span-2">
+                        <a href="./image/Gallry/2.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/2.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/3.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/3.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/4.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/4.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/5.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/5.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card md:col-span-2">
+                        <a href="./image/Gallry/6.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/6.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card md:col-span-2">
+                        <a href="./image/Gallry/7.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/7.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card md:col-span-2 md:row-span-2">
+                        <a href="./image/Gallry/8.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/8.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/9.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/9.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card md:col-span-2">
+                        <a href="./image/Gallry/10.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/10.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/11.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/11.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/12.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/12.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card md:col-span-2 md:row-span-2">
+                        <a href="./image/Gallry/13.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/13.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/14.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/14.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/15.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/15.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/16.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/16.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/17.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/17.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/18.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/18.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card md:col-span-2">
+                        <a href="./image/Gallry/19.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/19.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card">
+                        <a href="./image/Gallry/22.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/22.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card md:col-span-2">
+                        <a href="./image/Gallry/23.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/23.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card md:col-span-2">
+                        <a href="./image/Gallry/27.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/27.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                    <div class="img-card md:col-span-3">
+                        <a href="./image/Gallry/30.webp" data-fancybox="gallery">
+                            <img src="./image/Gallry/30.webp" alt="img-card" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-3 pt-5 lg:pt-0 bg-[#fdd601]">
+        <div class="px-4 lg:px-20">
+            <div class="flex flex-col lg:flex-row">
+                <!-- Left Section -->
+                <div class="w-full lg:w-1/3 pt-5 lg:pt-10 flex flex-col items-center">
+                    <img src="./image/logo.png" alt="img" class="w-1/2" />
+                    <p class="text-center text-sm pt-4 lg:pt-6 text-gray-700">
+                        Our Happiness Client's now all over the india
+                    </p>
+                    <div class="text-center">
+                        <p class="m-0 p-0">VISIT US AT :</p>
+                        <ul class="flex gap-4 justify-center items-center pt-2">
+                            <li>
+                                <a href="#" class="text-red-600 text-2xl lg:text-xl"><i
+                                        class="ri-facebook-box-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-red-600 text-2xl lg:text-xl"><i
+                                        class="ri-instagram-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-red-600 text-2xl lg:text-xl"><i class="ri-youtube-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-red-600 text-2xl lg:text-xl"><i
+                                        class="ri-whatsapp-fill"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Middle Section -->
+                <div class="w-full lg:w-1/3 pt-5 lg:pt-10 flex flex-col items-start lg:items-center ps-4 lg:ps-0">
+                    <ul class="list-none">
+                        <p class="md:text-lg text-md font-bold text-gray-700">Quick Links</p>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">Privacy
+                                Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline text-gray-700">Terms &
+                                Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Section -->
+                <div class="w-full lg:w-1/3 pt-3 lg:pt-10 flex flex-col items-start lg:items-center ps-4 lg:ps-0">
+                    <ul class="list-none">
+                        <p class="md:text-lg text-md  font-bold text-gray-700">Get In Touch</p>
+                        <li>
+                            <p class="m-0 font-bold md:text-lg text-sm text-gray-800">
+                                Customer Care :
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline">
+                                <i class="ri-phone-fill pe-2 text-gray-700"></i>7063379844
+                            </a>
+                        </li>
+                        <li>
+                            <p class="m-0 font-bold md:text-lg text-sm text-gray-800">Email :</p>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark md:text-lg text-sm no-underline">
+                                <i class="ri-mail-fill pe-2 text-gray-700"></i>care@dulu.co.in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="flex justify-center pt-4">
+                <div class="underline w-[80%] h-1 bg-gray-400 rounded-[50%]"></div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center pt-4 px-3">
+                <div class="w-full lg:w-1/2">
+                    <p>
+                        Web Development & Designed by
+                        <span class="font-bold text-[#ff6700]">fairbrain</span> (all
+                        rights reserved)
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <ul class="flex gap-3 justify-start lg:justify-end list-none pt-2 lg:pt-0">
+                        <li>
+                            <a href="#" class="text-dark no-underline text-gray-700">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark no-underline text-gray-700">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark no-underline text-gray-700">License</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/custom_gsap.js"></script>
+
+</body>
+
+</html>

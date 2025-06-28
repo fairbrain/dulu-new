@@ -151,6 +151,32 @@ body {
   font-size: clamp(50px, 5vw, 25px);
 }
 
+.gallery-heading {
+  font-size: clamp(3rem, 15vw, 15rem); 
+  -webkit-text-stroke: 2px rgb(161, 157, 157);   
+  color: white;                   
+  text-align: center;           
+  font-weight: bolder;   
+  line-height: 1;         
+}
+
+.img-card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gal-category-nav ul li{
+  background-color: white;
+  padding: 5px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.gal-category-nav ul li:hover{
+  scale: 1.1;
+}
+
 @media(max-width: 1200px) {
   .all-products::before {
     height: 100px;
